@@ -1,39 +1,21 @@
 body{
     background-size: cover;
 }
-
 .heading{
-    font-size: 23px;
     width: 100%;
-    margin: 0px;
-    box-shadow: 5px 5px 38px grey;
+    margin: 0;
+    font-size: 20px;
 }
-
 .note{
+    color: black;
     font-size: 15px;
-    color:black ;
-    white-space: normal;
 }
-
-.bnt{
-    letter-spacing: 3px;
+.song_name{
+    font-size: 20px;
 }
-
-.copy_right_footer{
-    position:fixed;
-    color:white;
-    bottom: 0;
-    width:100%;
-    background-color: grey;
-    line-height: 3;
-    text-align: center;
-    z-index: 9999;
-  }
-
-  canvas{
-    border: 3px solid white;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px grey;
-    margin-top: 100px;
-    margin-bottom: 200px;
-  }
+canvas{
+    background-color: #000000;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #73cfd8;
+}
