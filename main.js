@@ -33,7 +33,7 @@ function draw(){
     //console.log(song_name);
 
     if(scoreleftWrist > 0.2){
-        circle(leftwristx-60 ,leftwirstY-60, 20);
+        circle(leftwristx-60 ,leftwristY-60, 20);
         Harry_potter_theme_song.stop();
         if(song_name == false){
             Peter_pan_song.play();
