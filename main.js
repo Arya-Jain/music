@@ -14,7 +14,7 @@ function setup(){
     video = createCapture(VIDEO);
     video.hide();
 
-    poseNet = ml5.poseNet(video,modelLoaded);
+    poseNet = ml5.poseNet(video, modelLoaded);
     poseNet.on('pose',gotposes);
 }
 
@@ -33,20 +33,18 @@ function draw(){
     //console.log(song_name);
 
     if(scoreleftWrist > 0.2){
-        circle(leftwristx-60 ,leftwristY-60, 20);
+        circle(leftWrist_x-60 ,leftWrist_y-60, 20);
         Harry_potter_theme_song.stop();
+
         if(song_name == false){
             Peter_pan_song.play();
-        }
-        else{
-           // console.log("Song Name: Peter Pan Song");
             document.getElementById("song_id").innerHTML = "Song Name: Peter Pan Song";
-        }
-    }
+           }
+}
 }
 
 function modelLoaded(){
-    //console.log("poseNet Is Initialized");
+    console.log("poseNet Is Initialized");
 }
 
 function gotposes(results){
@@ -64,4 +62,5 @@ function gotposes(results){
         rightWrist_y = results[0].pose.rightWrist.y;
         //console.log("rightWrist_x = "+rightWrist_x+" rightWrist_y = "+rightWrist_y);
     }
+
 }
